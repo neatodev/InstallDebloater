@@ -2,7 +2,10 @@
 {
     class Program
     {
+        // Input TXT file
         static string[]? MainTXT;
+
+        // Root folder of the game/application
         static string? RootFolder;
 
         // 0 = relative, 1 = naming_scheme, 2 = folder
@@ -57,6 +60,9 @@
             Console.WriteLine(RootFolder + " exists and is not empty.");
         }
 
+        /// <summary>
+        /// Initializes Parameters to check which extra files to use.
+        /// </summary>
         private static void InitParams(string[] parameters)
         {
             for (int i = 0; i <= parameters.Count() - 1; i++)
@@ -78,6 +84,9 @@
             }
         }
 
+        /// <summary>
+        /// Deletes files in the *_RELATIVE.txt document. (Files that are relative to ROOT)
+        /// </summary>
         private static void DeleteRelative(string arg)
         {
 
@@ -109,6 +118,9 @@
             }
         }
 
+        /// <summary>
+        /// Deletes files in the *_NAMING_SCHEME.txt document. (Files with a specific structure)
+        /// </summary>
         private static void DeleteNamingScheme(string arg)
         {
             string scheme = arg.Substring(0, arg.LastIndexOf(".")) + "_NAMING_SCHEME.txt";
@@ -145,6 +157,9 @@
             }
         }
 
+        /// <summary>
+        /// Deletes folders in the *_FOLDER.txt document. (Folders and their files that are relative to ROOT)
+        /// </summary>
         private static void DeleteFolder(string arg)
         {
             string folderlist = arg.Substring(0, arg.LastIndexOf(".")) + "_FOLDER.txt";
