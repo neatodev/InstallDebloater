@@ -45,6 +45,9 @@
             }
         }
 
+        /// <summary>
+        /// Sets the root folder of the application.
+        /// </summary>
         private static void DefineRoot(string root)
         {
             try
@@ -159,6 +162,7 @@
 
         /// <summary>
         /// Deletes folders in the *_FOLDER.txt document. (Folders and their files that are relative to ROOT)
+        /// Also includes subfolders & files.
         /// </summary>
         private static void DeleteFolder(string arg)
         {
@@ -189,18 +193,14 @@
 
                         foreach (var subfolder in subfolders)
                         {
-                            try
+
+                            var subfiles = Directory.GetFiles(subfolder);
+                            foreach (var subfile in subfiles)
                             {
-                                var subfiles = Directory.GetFiles(subfolder);
-                                foreach (var subfile in subfiles)
-                                {
-                                    System.IO.File.Delete(subfile);
-                                    Console.WriteLine("Deleting " + subfile + " in folder: " + subfolder);
-                                }
+                                System.IO.File.Delete(subfile);
+                                Console.WriteLine("Deleting " + subfile + " in folder: " + subfolder);
                             }
-                            catch (FileNotFoundException)
-                            {
-                            }
+
                             System.IO.Directory.Delete(subfolder);
                         }
                         var files = Directory.GetFiles(RootFolder + "\\" + folder);
