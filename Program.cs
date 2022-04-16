@@ -13,13 +13,12 @@
 
         private static int FileCounter, FolderCounter = 0;
 
-        private static long StartingFileSize = 0;
-        private static long FinalFileSize = 0;
-        private static long TotalFileSize = 0;
+        private static double StartingFileSize = 0;
+        private static double FinalFileSize = 0;
+        private static double TotalFileSize = 0;
 
         static void Main(string[] args)
         {
-            var output = new Output();
             try
             {
                 MainTXT = System.IO.File.ReadAllLines(args[0]);
@@ -38,7 +37,8 @@
                     DeleteFolder(args[0]);
                 }
                 FinalFileSize = DefineSize(RootFolder);
-                output.message(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
+                Console.WriteLine(TotalFileSize);
+                Output.message(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
             }
             catch (IndexOutOfRangeException)
             {
@@ -78,21 +78,23 @@
         /// <summary>
         /// Calculates the total size of all folders and files. Returns that value.
         /// </summary>
-        private static long DefineSize(string folderpath)
+        private static double DefineSize(string folderpath)
         {
-            long value = 0;
+            double value = 0;
 
-            DirectoryInfo dirs = new DirectoryInfo(folderpath);
+            var dirs = Directory.GetDirectories(folderpath, "*", System.IO.SearchOption.AllDirectories);
 
-            foreach (var dir in dirs.EnumerateDirectories())
+            foreach (var dir in dirs)
             {
-                foreach (var file in dir.EnumerateFiles())
+                var subfiles = Directory.GetFiles(dir);
+                foreach (var subfile in subfiles)
                 {
-                    value += file.Length;
+                    value += subfile.Length;
                 }
             }
 
-            foreach (var file in dirs.EnumerateFiles())
+            var files = Directory.GetFiles(folderpath);
+            foreach (var file in files)
             {
                 value += file.Length;
             }
@@ -143,10 +145,10 @@
                     }
                     try
                     {
+                        TotalFileSize += new FileInfo(line).Length;
                         System.IO.File.Delete(RootFolder + "\\" + line);
                         Console.WriteLine("Deleted: " + RootFolder + "\\" + line);
                         FileCounter++;
-                        TotalFileSize += line.Length;
                     }
                     catch (FileNotFoundException)
                     {
@@ -187,9 +189,9 @@
                             if (file.Contains(line))
                             {
                                 Console.WriteLine("Deleting: " + file);
+                                TotalFileSize += new FileInfo(file).Length;
                                 System.IO.File.Delete(file);
                                 FileCounter++;
-                                TotalFileSize += file.Length;
                             }
                         }
                     }
@@ -233,6 +235,8 @@
                     catch (IOException)
                     {
                         var subfolders = Directory.GetDirectories(fullpath, "*", System.IO.SearchOption.AllDirectories);
+                        Array.Sort(subfolders);
+                        Array.Reverse(subfolders);
 
                         foreach (var subfolder in subfolders)
                         {
@@ -240,11 +244,10 @@
                             var subfiles = Directory.GetFiles(subfolder);
                             foreach (var subfile in subfiles)
                             {
+                                TotalFileSize += new FileInfo(subfile).Length;
                                 System.IO.File.Delete(subfile);
-                                Console.WriteLine("Deleting " + subfile + " in folder: " + subfolder);
+                                Console.WriteLine("Deleting " + subfile);
                                 FileCounter++;
-                                TotalFileSize += subfile.Length;
-
                             }
 
                             System.IO.Directory.Delete(subfolder);
@@ -253,10 +256,10 @@
                         var files = Directory.GetFiles(fullpath);
                         foreach (var file in files)
                         {
+                            TotalFileSize += new FileInfo(file).Length;
                             System.IO.File.Delete(file);
-                            Console.WriteLine("Deleting " + file + " in folder: " + folder);
+                            Console.WriteLine("Deleting " + file);
                             FileCounter++;
-                            TotalFileSize += file.Length;
                         }
                         Console.WriteLine("Deleting: " + folder);
                         System.IO.Directory.Delete(fullpath);
