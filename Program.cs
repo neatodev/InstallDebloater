@@ -37,7 +37,6 @@
                     DeleteFolder(args[0]);
                 }
                 FinalFileSize = DefineSize(RootFolder);
-                Console.WriteLine(StartingFileSize + " " + FinalFileSize);
                 Output.message(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
             }
             catch (IndexOutOfRangeException)

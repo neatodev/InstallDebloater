@@ -12,7 +12,11 @@ namespace InstallDebloater
             Console.WriteLine("Starting size: " + Math.Round(((start / 1024) / 1024), 3) + "MB. Final size: " + Math.Round(((final / 1024) / 1024), 3) + "MB.");
             Console.WriteLine("Deleted a total of " + totalfiles + " files and " + totalfolders + " folders.");
             Console.WriteLine("The total deleted file size amounts to: " + Math.Round(((totalfilesize / 1024) / 1024), 3) + "MB.");
-            Console.WriteLine("The folder size has been reduced by: " + Math.Round(((final / start) * 100), 2) + "%");
+            Console.WriteLine("The total size has been reduced by: " + Math.Round(((final / start) * 100), 2) + "%");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Application written by: Mario Schweidler (neatodev)");
+            Console.WriteLine("Github: https://github.com/neatodev/InstallDebloater");
             Console.WriteLine("*********************************************************");
             Console.WriteLine("*********************************************************");
             Console.WriteLine();
