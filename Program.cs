@@ -24,6 +24,11 @@
                 MainTXT = System.IO.File.ReadAllLines(args[0]);
                 DefineRoot(MainTXT[0]);
                 InitParams(MainTXT.Skip(1).ToArray());
+                if (!boolList[0] && !boolList[1] && !boolList[2])
+                {
+                    Console.WriteLine("No actions specified. Ending the process.");
+                    System.Environment.Exit(0);
+                }
                 if (boolList[0])
                 {
                     DeleteRelative(args[0]);
@@ -38,6 +43,7 @@
                 }
                 FinalFileSize = DefineSize(RootFolder);
                 Output.message(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
+                Console.ReadKey();
             }
             catch (IndexOutOfRangeException)
             {
