@@ -7,8 +7,6 @@
         // Root folder of the game/application
         static string? RootFolder;
 
-        private static string[]? Whitelist;
-
         private static int FileCounter, FolderCounter = 0;
 
         private static double StartingFileSize = 0;
