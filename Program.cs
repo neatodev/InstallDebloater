@@ -52,12 +52,17 @@
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("Index out of bounds. Please provide a commandline parameter.");
-                System.Environment.Exit(1);
+                Console.ReadKey();
+            }
+            catch (IniParser.Exceptions.ParsingException)
+            {
+                Console.WriteLine("Could not parse file. Is the path/format correct?");
+                Console.ReadKey();
             }
             catch (FileNotFoundException)
             {
                 Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
-                System.Environment.Exit(1);
+                Console.ReadKey();
             }
         }
 
