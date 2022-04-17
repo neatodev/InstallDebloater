@@ -6,7 +6,7 @@ InstallDebloater is a commandline application that aims to reduce the total file
 
 ## Templates
 
-In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template the we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
+In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template that we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
 
 ## Usage
 
