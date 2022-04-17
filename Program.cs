@@ -8,7 +8,7 @@
         static string? RootFolder;
 
         private static int FileCounter, FolderCounter = 0;
-
+        private static bool IsRelative, IsNamingScheme, IsFolder;
         private static double StartingFileSize = 0;
         private static double FinalFileSize = 0;
         private static double TotalFileSize = 0;
@@ -19,32 +19,32 @@
             {
                 var ini = new FileIniDataParser();
                 IniData data = ini.ReadFile(args[0]);
-                RootFolder = data["CORE"]["ROOT"];
+                Parse(data);
                 StartingFileSize = DefineSize(RootFolder);
-                if (!bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]))
+                if (!IsRelative && !IsNamingScheme && !IsFolder)
                 {
                     Console.WriteLine("No actions specified. Ending the process.");
                     System.Environment.Exit(0);
                 }
-                if (bool.Parse(data["CORE"]["RELATIVE"]))
+                if (IsRelative)
                 {
                     DeleteRelative(args[0]);
                 }
-                if (bool.Parse(data["CORE"]["NAMING_SCHEME"]))
+                if (IsNamingScheme)
                 {
                     DeleteNamingScheme(args[0]);
                 }
-                if (bool.Parse(data["CORE"]["FOLDER"]))
+                if (IsFolder)
                 {
                     DeleteFolder(args[0]);
                 }
-                FinalFileSize = DefineSize(RootFolder);
                 if (FileCounter == 0 && FolderCounter == 0)
                 {
                     Output.failmessage(FileCounter, FolderCounter);
                 }
                 else
                 {
+                    FinalFileSize = DefineSize(RootFolder);
                     Output.successmessage(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
                 }
                 Console.ReadKey();
@@ -64,6 +64,17 @@
                 Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
                 Console.ReadKey();
             }
+        }
+
+        /// <summary>
+        /// Processes all values from IniData.
+        /// </summary>
+        private static void Parse(IniData d)
+        {
+            RootFolder = d["CORE"]["ROOT"];
+            IsRelative = bool.Parse(d["CORE"]["RELATIVE"]);
+            IsNamingScheme = bool.Parse(d["CORE"]["NAMING_SCHEME"]);
+            IsFolder = bool.Parse(d["CORE"]["FOLDER"]);
         }
 
         /// <summary>
