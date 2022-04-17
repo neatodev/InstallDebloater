@@ -173,6 +173,18 @@
                             }
                         }
                     }
+
+                    var rootfiles = Directory.GetFiles(RootFolder);
+                    foreach (var rootfile in rootfiles)
+                    {
+                        if (rootfile.Contains(line))
+                        {
+                            Console.WriteLine("Deleting: " + rootfile);
+                            TotalFileSize += new FileInfo(rootfile).Length;
+                            System.IO.File.Delete(rootfile);
+                            FileCounter++;
+                        }
+                    }
                 }
                 catch (ArgumentOutOfRangeException)
                 {
