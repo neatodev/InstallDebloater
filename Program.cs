@@ -56,7 +56,7 @@
             }
             catch (IniParser.Exceptions.ParsingException)
             {
-                Console.WriteLine("Could not parse file. Is the path/format correct?");
+                Console.WriteLine("Could not parse file. Is the path/format correct? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
                 Console.ReadKey();
             }
             catch (FileNotFoundException)
