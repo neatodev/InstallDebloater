@@ -52,7 +52,7 @@ In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELA
 In the **_NAMING_SCHEME.txt**, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matches will be deleted.
 
 
-The structure for all files as follows:
+The structure for all files is as follows:
 
 ```
 Application.ini--|
