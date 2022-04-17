@@ -1,0 +1,13 @@
+# Put naming schemes here
+
+# the following will delete all localizations and the Japanese audio files
+
+_fre.
+_fre_
+_ger.
+_ger_
+_ita.
+_ita_
+_spa.
+_spa_
+_jpn.sngw
