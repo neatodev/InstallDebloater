@@ -1,15 +1,13 @@
 ﻿namespace InstallDebloater
 {
+    using IniParser;
+    using IniParser.Model;
     class Program
     {
-        // Input TXT file
-        static string[]? MainTXT;
-
         // Root folder of the game/application
         static string? RootFolder;
 
-        // 0 = relative, 1 = naming_scheme, 2 = folder
-        private static bool[] boolList = { false, false, false };
+        private static string[]? Whitelist;
 
         private static int FileCounter, FolderCounter = 0;
 
@@ -21,23 +19,24 @@
         {
             try
             {
-                MainTXT = System.IO.File.ReadAllLines(args[0]);
-                DefineRoot(MainTXT[0]);
-                InitParams(MainTXT.Skip(1).ToArray());
-                if (!boolList[0] && !boolList[1] && !boolList[2])
+                var ini = new FileIniDataParser();
+                IniData data = ini.ReadFile(args[0]);
+                RootFolder = data["CORE"]["ROOT"];
+                StartingFileSize = DefineSize(RootFolder);
+                if (!bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]))
                 {
                     Console.WriteLine("No actions specified. Ending the process.");
                     System.Environment.Exit(0);
                 }
-                if (boolList[0])
+                if (bool.Parse(data["CORE"]["RELATIVE"]))
                 {
                     DeleteRelative(args[0]);
                 }
-                if (boolList[1])
+                if (bool.Parse(data["CORE"]["NAMING_SCHEME"]))
                 {
                     DeleteNamingScheme(args[0]);
                 }
-                if (boolList[2])
+                if (bool.Parse(data["CORE"]["FOLDER"]))
                 {
                     DeleteFolder(args[0]);
                 }
@@ -49,35 +48,12 @@
             {
                 Console.WriteLine("Index out of bounds. Please provide a commandline parameter.");
                 System.Environment.Exit(1);
-
             }
             catch (FileNotFoundException)
             {
                 Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
                 System.Environment.Exit(1);
-
             }
-        }
-
-        /// <summary>
-        /// Sets the root folder of the application and determines the total file size.
-        /// </summary>
-        private static void DefineRoot(string root)
-        {
-            try
-            {
-                RootFolder = root.Substring(root.LastIndexOf("=") + 1);
-                Directory.GetFiles(RootFolder);
-            }
-            catch (DirectoryNotFoundException)
-            {
-                Console.WriteLine(RootFolder + " is not a valid directory or empty.");
-                System.Environment.Exit(1);
-            }
-
-            StartingFileSize = DefineSize(RootFolder);
-
-            Console.WriteLine(RootFolder + " exists and is not empty.");
         }
 
         /// <summary>
@@ -107,30 +83,6 @@
         }
 
         /// <summary>
-        /// Initializes Parameters to check which extra files to use.
-        /// </summary>
-        private static void InitParams(string[] parameters)
-        {
-            for (int i = 0; i <= parameters.Count() - 1; i++)
-            {
-                if (parameters[i].Substring(parameters[i].LastIndexOf("=") + 1) == "YES" && (parameters[i].Contains("RELATIVE") || parameters[i].Contains("NAMING_SCHEME") || parameters[i].Contains("FOLDER")))
-                {
-                    boolList[i] = true;
-                }
-                else if (parameters[i].Substring(parameters[i].LastIndexOf("=") + 1) == "NO" && (parameters[i].Contains("RELATIVE") || parameters[i].Contains("NAMING_SCHEME") || parameters[i].Contains("FOLDER")))
-                {
-                    boolList[i] = false;
-                }
-                else
-                {
-                    Console.WriteLine("Could not initialize parameter: " + parameters[i]);
-                    System.Environment.Exit(1);
-                }
-                Console.WriteLine("Initialized " + parameters[i] + " successfully.");
-            }
-        }
-
-        /// <summary>
         /// Deletes files in the *_RELATIVE.txt document. (Files that are relative to ROOT)
         /// </summary>
         private static void DeleteRelative(string arg)
@@ -150,7 +102,7 @@
                     }
                     try
                     {
-                        TotalFileSize += new FileInfo(line).Length;
+                        TotalFileSize += new FileInfo(RootFolder + "\\" + line).Length;
                         System.IO.File.Delete(RootFolder + "\\" + line);
                         Console.WriteLine("Deleted: " + RootFolder + "\\" + line);
                         FileCounter++;
