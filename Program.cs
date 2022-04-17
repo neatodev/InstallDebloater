@@ -47,22 +47,22 @@
                     FinalFileSize = DefineSize(RootFolder);
                     Output.successmessage(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
                 }
-                Console.ReadKey();
+                Console.ReadLine();
             }
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("Index out of bounds. Please provide a commandline parameter.");
-                Console.ReadKey();
+                Console.ReadLine();
             }
             catch (IniParser.Exceptions.ParsingException)
             {
                 Console.WriteLine("Could not parse file. Is the path/format correct? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
-                Console.ReadKey();
+                Console.ReadLine();
             }
             catch (FileNotFoundException)
             {
                 Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
-                Console.ReadKey();
+                Console.ReadLine();
             }
         }
 
@@ -251,7 +251,7 @@
                             Console.WriteLine("Deleting " + file);
                             FileCounter++;
                         }
-                        Console.WriteLine("Deleting: " + folder);
+                        Console.WriteLine("Deleting: " + fullpath);
                         System.IO.Directory.Delete(fullpath);
                         FolderCounter++;
                     }
