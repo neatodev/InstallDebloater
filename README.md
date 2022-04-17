@@ -6,7 +6,7 @@ InstallDebloater is a commandline application that aims to reduce the total file
 
 ## Templates
 
-In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template the we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
+In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template that we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
 
 ## Usage
 
@@ -52,7 +52,7 @@ In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELA
 In the **_NAMING_SCHEME.txt**, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matches will be deleted.
 
 
-The structure for all files as follows:
+The structure for all files is as follows:
 
 ```
 Application.ini--|
