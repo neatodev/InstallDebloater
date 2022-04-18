@@ -7,6 +7,7 @@
     <Authors>Mario Schweidler</Authors>
     <Copyright>Mario Schweidler</Copyright>
     <Company>neatodev</Company>
+    <ApplicationIcon>diskdrive.ico</ApplicationIcon>
     <Version>1.0.0</Version>
   </PropertyGroup>
   <ItemGroup>

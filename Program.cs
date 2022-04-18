@@ -7,10 +7,8 @@
         // Root folder of the game/application
         static string? RootFolder;
 
-        private static string[]? Whitelist;
-
         private static int FileCounter, FolderCounter = 0;
-
+        private static bool IsRelative, IsNamingScheme, IsFolder;
         private static double StartingFileSize = 0;
         private static double FinalFileSize = 0;
         private static double TotalFileSize = 0;
@@ -21,39 +19,62 @@
             {
                 var ini = new FileIniDataParser();
                 IniData data = ini.ReadFile(args[0]);
-                RootFolder = data["CORE"]["ROOT"];
+                Parse(data);
                 StartingFileSize = DefineSize(RootFolder);
-                if (!bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]) && !bool.Parse(data["CORE"]["RELATIVE"]))
+                if (!IsRelative && !IsNamingScheme && !IsFolder)
                 {
                     Console.WriteLine("No actions specified. Ending the process.");
                     System.Environment.Exit(0);
                 }
-                if (bool.Parse(data["CORE"]["RELATIVE"]))
+                if (IsRelative)
                 {
                     DeleteRelative(args[0]);
                 }
-                if (bool.Parse(data["CORE"]["NAMING_SCHEME"]))
+                if (IsNamingScheme)
                 {
                     DeleteNamingScheme(args[0]);
                 }
-                if (bool.Parse(data["CORE"]["FOLDER"]))
+                if (IsFolder)
                 {
                     DeleteFolder(args[0]);
                 }
-                FinalFileSize = DefineSize(RootFolder);
-                Output.message(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
-                Console.ReadKey();
+                if (FileCounter == 0 && FolderCounter == 0)
+                {
+                    Output.failmessage(FileCounter, FolderCounter);
+                }
+                else
+                {
+                    FinalFileSize = DefineSize(RootFolder);
+                    Output.successmessage(StartingFileSize, FileCounter, FolderCounter, TotalFileSize, FinalFileSize);
+                }
+                Console.ReadLine();
             }
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("Index out of bounds. Please provide a commandline parameter.");
-                System.Environment.Exit(1);
+                Console.ReadLine();
+            }
+            catch (IniParser.Exceptions.ParsingException)
+            {
+                Console.WriteLine("Could not parse file. Is the path/format correct? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
+                Console.ReadLine();
             }
             catch (FileNotFoundException)
             {
                 Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
-                System.Environment.Exit(1);
+                Console.ReadLine();
             }
+        }
+
+        /// <summary>
+        /// Processes all values from IniData.
+        /// </summary>
+        private static void Parse(IniData d)
+        {
+            RootFolder = d["CORE"]["ROOT"];
+            IsRelative = bool.Parse(d["CORE"]["RELATIVE"]);
+            IsNamingScheme = bool.Parse(d["CORE"]["NAMING_SCHEME"]);
+            IsFolder = bool.Parse(d["CORE"]["FOLDER"]);
         }
 
         /// <summary>
@@ -152,6 +173,18 @@
                             }
                         }
                     }
+
+                    var rootfiles = Directory.GetFiles(RootFolder);
+                    foreach (var rootfile in rootfiles)
+                    {
+                        if (rootfile.Contains(line))
+                        {
+                            Console.WriteLine("Deleting: " + rootfile);
+                            TotalFileSize += new FileInfo(rootfile).Length;
+                            System.IO.File.Delete(rootfile);
+                            FileCounter++;
+                        }
+                    }
                 }
                 catch (ArgumentOutOfRangeException)
                 {
@@ -218,7 +251,7 @@
                             Console.WriteLine("Deleting " + file);
                             FileCounter++;
                         }
-                        Console.WriteLine("Deleting: " + folder);
+                        Console.WriteLine("Deleting: " + fullpath);
                         System.IO.Directory.Delete(fullpath);
                         FolderCounter++;
                     }
