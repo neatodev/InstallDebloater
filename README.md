@@ -4,9 +4,31 @@
 
 InstallDebloater is a commandline application that aims to reduce the total file size of applications and games without breaking them. We offer a constantly expanding list of curated, hand-crafted and tested templates that remove the clutter from your apps and games without impacting the core experience. It just saves space on your drives.
 
+## How does it work?
+
+InstallDebloater works with templates. These templates contain one main .ini file, three optional .txt files and a .bat file to run the whole thing. The .ini file specifies which deletion methods are going to be used and the .txt files define which files and folders are going to get deleted.
+
+## What gets deleted?
+
+It depends on the specific game or application. Sometimes we remove unused localization files or multiplayer components that had their servers shut down. Often times developers ship unused assets that bloat the installation size as well, we remove those too. 
+
+Ultimately, what gets deleted and what stays is very specific to that game or application, please check the next section for more information on templates.
+
 ## Templates
 
 In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template that we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
+
+Each template has its own unique and detailed README file that explains what it does.
+
+## Examples
+
+In the first example, we manage to reduce the file size of Batman: Arkham Origins by **over 40%**. The template deletes unused localizations and outdated multiplayer components:
+
+![Origins](https://user-images.githubusercontent.com/49599979/163802940-698d9433-11ca-4067-a01e-062542649aaf.png)
+
+In the second example, we reduce the size of Resident Evil: Revelations 2 by **8,96%**. In this case, we remove localization files (sounds, texts, menus...) that we do not use.
+
+![Rev2](https://user-images.githubusercontent.com/49599979/163803078-2543cabe-4527-41ae-8b06-f0ae20f87d8e.png)
 
 ## Usage
 
@@ -22,7 +44,7 @@ In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/temp
 
 While we provide curated and tested templates, you can also create your own.
 
-First, you need an .ini file. The name does not matter, but it needs to be universal for all .txt files (see structure). The contents of the .ini file need to look like this:
+First, you need an .ini file. The name does not matter, but it needs to be universal for all .txt files that depend on it (see structure). The contents of the .ini file need to look like this:
 
 ```
 ; This is an example for a comment. You can place comments anywhere.
@@ -43,13 +65,13 @@ dat\relative\example\file.txt
 
 dat\folder\example\dir
 
-naming_scheme_example
+naming_scheme.example
 ```
 In the **_RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
 
 In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
 
-In the **_NAMING_SCHEME.txt**, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matches will be deleted.
+In the **_NAMING_SCHEME.txt** file, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matching files will get deleted.
 
 
 The structure for all files is as follows:
