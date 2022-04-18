@@ -1,0 +1,50 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+_LOC_DEU.
+.deu
+_DEU.
+
+# Spanish
+_LOC_ESN.
+_ESN.
+.esn
+
+# Mexico Spanish 
+.ESM
+_ESM.
+
+# Japanese
+.JPN
+_JPN.
+
+# Korean
+.KOR
+_KOR.
+
+# Latin?
+_LAS.
+
+# Polish
+.POL
+_POL.
+
+# Portuguese
+_LOC_POR.
+.POR
+_POR.
+
+# Russian
+.RUS
+_RUS.
+
+# French
+_LOC_FRA.
+_FRA.
+.fra
+
+# Italian
+_LOC_ITA.
+.ita
+_ITA.

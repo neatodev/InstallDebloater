@@ -1,3 +1,0 @@
-# The path of the file in the RELATIVE document is always RELATIVE to the root folder
-
-resource\MtNetLocalTitleStorage\raidInfo.enc

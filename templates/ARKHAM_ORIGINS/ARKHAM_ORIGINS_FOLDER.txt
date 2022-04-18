@@ -1,0 +1,3 @@
+# The following will delete the Online Multiplayer folder.
+
+Online

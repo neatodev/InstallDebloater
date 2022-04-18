@@ -1,3 +1,0 @@
-# From Root > define a folder here
-
-dat\DLC_EPISODE_02
