@@ -1,0 +1,30 @@
+# the following will delete all localizations files.
+# Add a # at the beginning of a line to keep this language. 
+
+
+# French
+_french.
+_fr.dat
+_fr.str
+french.fsb
+
+# German
+_german.
+_de.dat
+_de.str
+german.fsb
+
+# Italian
+_italian.
+_it.dat
+_it.str
+italian.fsb
+
+# Spanish
+_spanish.
+_sp.dat
+_sp.str
+spanish.fsb
+
+# Spanish (Mexico)
+mexican.fsb

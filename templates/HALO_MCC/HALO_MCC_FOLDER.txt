@@ -1,0 +1,31 @@
+# # the following will delete all localizations files.
+# Add a # at the beginning of a line to keep this language. 
+
+# The following entries are for the intro movie for Halo 3: ODST
+
+# Chinese
+halo3odst\bink\ch
+
+# German
+halo3odst\bink\de
+
+# French
+halo3odst\bink\fr
+
+# French (Without ESRB Rating Warning)
+halo3odst\bink\fr_no_esrb
+
+# Italian
+halo3odst\bink\it
+
+# Japanese
+halo3odst\bink\jp
+
+# Korean
+halo3odst\bink\kr
+
+# Portuguese
+halo3odst\bink\por
+
+# Spanish
+halo3odst\bink\sp
