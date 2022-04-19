@@ -1,0 +1,6 @@
+# The following will delete all DLCs and some redist folders.
+
+Max Payne 3\.Addon
+Max Payne 3\dlc
+MP3_Installers\DirectX
+Redistributables
