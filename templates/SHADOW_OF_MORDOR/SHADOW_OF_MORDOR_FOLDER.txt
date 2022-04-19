@@ -1,0 +1,20 @@
+# The following will delete unused localizations.
+# Place a # in front of the language you want to keep.
+
+# French
+game\sound\FrenchFrance
+
+# German
+game\sound\German
+
+# Italian
+game\sound\Italian
+
+# Portuguese
+game\sound\PortugueseBrazil
+
+# Spanish (Mexico)
+game\sound\SpanishMexico
+
+# Spanish (Spain)
+game\sound\SpanishSpain

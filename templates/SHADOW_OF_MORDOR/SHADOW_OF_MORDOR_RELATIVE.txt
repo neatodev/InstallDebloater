@@ -1,0 +1,35 @@
+# The following will delete unused localizations.
+# Place a # in front of the language you want to keep.
+
+# French
+game\interface\videos\intro_fr.vib
+
+# German
+game\interface\videos\intro_de.vib
+
+# Italian
+game\interface\videos\intro_IT.vib
+
+# Portuguese
+game\interface\videos\intro_po.vib
+
+# Spanish (Mexico)
+game\interface\videos\intro_mx.vib
+
+# Spanish (Spain)
+game\interface\videos\intro_sp.vib
+
+# Czech
+game\interface\videos\intro_cz.vib
+
+# Hungarian
+game\interface\videos\intro_hu.vib
+
+# Japanese
+game\interface\videos\intro_ja.vib
+
+# Polish
+game\interface\videos\intro_pl.vib
+
+# Russian
+game\interface\videos\intro_ru.vib
