@@ -5,7 +5,7 @@ Removes all languages except English and deletes the localized FMVs for BloodRay
 
 ## Installation
 
-Download this template and put it next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
+[Download](https://github.com/neatodev/InstallDebloater/blob/main/templates/BLOODRAYNE_TERMINAL_CUT/BLOODRAYNE_TERMINAL_CUT.zip) this template and put it next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
 
 ## Usage
 
