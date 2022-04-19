@@ -1,0 +1,18 @@
+# the following will delete all localized FMVs from "video" folder
+# Add a # at the beginning of a line to keep this language. 
+
+
+# French
+_FR.bik
+
+# Japanese
+_JP.bik
+
+# Italian
+_IT.bik
+
+# Spanish
+_ES.bik
+
+# Russian
+_ru.bik

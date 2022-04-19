@@ -1,0 +1,4 @@
+# the following will delete original version of BloodRayne.
+
+Legacy Version
+
