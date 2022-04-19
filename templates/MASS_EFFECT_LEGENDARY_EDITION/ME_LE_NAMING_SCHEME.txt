@@ -1,0 +1,47 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+_de.isb
+_DE.pcc
+_DEU.afc
+_DEU.pcc
+_DEU.tlk
+
+# Spanish
+_ESN.pcc
+_ESN.afc
+_ESN.pcc
+_ESN.tlk
+
+# Russian
+_ra.isb
+_RA.pcc
+_RUS.pcc
+_RUS.afc
+_RUS.tlk
+
+# French
+_fr.isb
+_FR.pcc
+_FRA.afc
+_FRA.pcc
+_FRA.tlk
+
+# Italian
+_it.isb
+_IT.pcc
+_ITA.afc
+_ITA.pcc
+_ITA.tlk
+
+# Polish
+_plpc.isb
+_PLPC.pcc
+_POL.pcc
+_POL.tlk
+
+# Japanese
+_JPN.pcc
+_JPN.afc
+_JPN.tlk
