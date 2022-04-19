@@ -1,0 +1,9 @@
+# The following will delete all startup movies.
+
+BmGame\Movies\baa_logo_run_v5_h264.bik
+BmGame\Movies\Black.bik
+BmGame\Movies\Legal.bik
+BmGame\Movies\Legalus.bik
+BmGame\Movies\nvidia.bik
+BmGame\Movies\utlogo.bik
+

@@ -4,43 +4,64 @@
 # German
 _LOC_DEU.
 .deu
+.Deu
+.DEU
 _DEU.
 
 # Spanish
 _LOC_ESN.
 _ESN.
+.ESN
+.Esn
 .esn
 
 # Mexico Spanish 
 .ESM
+.Esm
+.esm
 
 # Japanese
 .JPN
+.Jpn
+.jpn
 
 # Korean
 .KOR
+.Kor
+.kor
 
 # Latin?
 _LAS.
 
 # Polish
 .POL
+.Pol
+.pol
 _POL.
 
 # Portuguese
 .POR
 _POR.
+.Por
+.POR
+.por
 
 # Russian
 .RUS
+.rus
+.Rus
 _RUS.
 
 # French
 _LOC_FRA.
 _FRA.
 .fra
+.Fra
+.FRA
 
 # Italian
 _LOC_ITA.
 .ita
+.Ita
+.ITA
 _ITA.
