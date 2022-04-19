@@ -1,0 +1,24 @@
+# Put naming schemes here
+
+# the following will delete all localizations and the Japanese audio files
+# Add a # at the beginning of a line to keep this language. 
+
+# French
+_fre.
+_fre_
+
+# German
+_ger.
+_ger_
+
+# Italian
+_ita.
+_ita_
+
+# Spanish
+_spa.
+_spa_
+
+# Japanese (Voices & subtitles only)
+_jpn.sngw
+_jpn.stqr
