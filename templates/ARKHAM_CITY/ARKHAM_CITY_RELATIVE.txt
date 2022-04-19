@@ -1,0 +1,7 @@
+# The following will delete all startup movies.
+
+BMGame\Movies\bac_logo.usm
+BMGame\Movies\bac_logo_fra.usm
+BMGame\Movies\startup.swf
+BMGame\Movies\startup_original.swf
+BMGame\Movies\startupNV.swf
