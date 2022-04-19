@@ -1,0 +1,4 @@
+# The following will delete all startup movies.
+
+MCC\Content\Movies\FMS_logo_343_7_1_.bk2
+MCC\Content\Movies\FMS_logo_microsoft_7_1_.bk2
