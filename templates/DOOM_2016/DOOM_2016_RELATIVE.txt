@@ -1,0 +1,31 @@
+# The following will delete the mutiplayer and Snapmap modes.
+# Delete these to keep those game modes. 
+
+base\sound\soundbanks\pc\doom_weapon_mp.bnk
+base\sound\soundbanks\pc\doom_dlc1_sfx.bnk
+base\sound\soundbanks\pc\doom_dlc2_sfx.bnk
+base\sound\soundbanks\pc\doom_dlc3_sfx.bnk
+base\sound\soundbanks\pc\doom_mp.bnk
+base\sound\soundbanks\pc\doom_snapmaps.bnk
+base\sound\soundbanks\pc\streamed_sfx_dlc1.pck
+base\sound\soundbanks\pc\streamed_sfx_dlc2.pck
+base\sound\soundbanks\pc\streamed_sfx_dlc3.pck
+base\snap_gameresources.index
+base\snap_gameresources.index.verify
+base\snap_gameresources.patch
+base\snap_gameresources.patch.verify
+base\snap_gameresources.pindex
+base\snap_gameresources.pindex.verify
+base\snap_gameresources.resources
+base\snap_gameresources.resources.verify
+base\snap_models.preload
+base\sound\soundbanks\pc\English(US)\doom_dlc1_vo.bnk
+base\sound\soundbanks\pc\English(US)\doom_dlc2_vo.bnk
+base\sound\soundbanks\pc\English(US)\doom_dlc3_vo.bnk
+base\sound\soundbanks\pc\English(US)\streamed_vo_dlc1.pck
+base\sound\soundbanks\pc\English(US)\streamed_vo_dlc2.pck
+base\sound\soundbanks\pc\English(US)\streamed_vo_dlc3.pck
+virtualtextures\_vmtr_dlc1.vmtr
+virtualtextures\_vmtr_dlc2.vmtr
+virtualtextures\_vmtr_dlc3.vmtr
+virtualtextures\_vmtr_dlc4.vmtr

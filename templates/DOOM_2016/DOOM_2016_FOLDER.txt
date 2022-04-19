@@ -1,0 +1,16 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# Localizations
+base\sound\soundbanks\pc\French(France)
+base\sound\soundbanks\pc\German
+base\sound\soundbanks\pc\Italian
+base\sound\soundbanks\pc\Japanese
+base\sound\soundbanks\pc\Polish
+base\sound\soundbanks\pc\Portuguese(Brazil)
+base\sound\soundbanks\pc\Russian
+base\sound\soundbanks\pc\Spanish(Mexico)
+base\sound\soundbanks\pc\Spanish(Spain)
+
+# Multiplayer mode
+virtualtextures\maps\game\mp
