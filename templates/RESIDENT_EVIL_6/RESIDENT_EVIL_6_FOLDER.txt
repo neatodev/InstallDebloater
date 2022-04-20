@@ -1,0 +1,38 @@
+# The following will delete the Digital Soundtrack DLC, the Digital Artbook DLC and the Wallpapers Set DLC.
+
+Digital Soundtrack
+RE6_BH6_Wallpaper_set
+Resident Evil 6 Digital Artbook
+
+
+# The following will delete localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# French
+nativePC\sound\se\radio\source\fre
+nativePC\sound\se\demo\source\fre
+nativePC\sound\ev\se\fre
+nativePC\data\id\fre
+
+# German
+nativePC\sound\se\radio\source\ger
+nativePC\sound\se\demo\source\ger
+nativePC\sound\ev\se\ger
+nativePC\data\id\ger
+
+# Italian
+nativePC\sound\se\radio\source\ita
+nativePC\sound\se\demo\source\ita
+nativePC\sound\ev\se\ita
+nativePC\data\id\ita
+
+# Spanish
+nativePC\sound\se\radio\source\spa
+nativePC\sound\se\demo\source\spa
+nativePC\sound\ev\se\spa
+nativePC\data\id\spa
+
+
+# The following will delete the redistribuable folder.
+
+support
