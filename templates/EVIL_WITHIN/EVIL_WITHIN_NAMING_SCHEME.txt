@@ -1,0 +1,14 @@
+# The following will delete all localizations files except English. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+_de.
+
+# Spanish
+_es.
+
+# French
+_fr.
+
+# Italian
+_it.
