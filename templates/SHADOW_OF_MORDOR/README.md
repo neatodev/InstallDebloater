@@ -9,7 +9,7 @@ This template is designed to work with Middle Earth: Shadow of Mordor. Should wo
 
 ## Usage
 
-First, open MAX_PAYNE_3.ini with a text editor and add the complete filepath to your game root folder (example: C:\Steam\steamapps\common\Shadow of Mordor).
+First, open SHADOW_OF_MORDOR.ini with a text editor and add the complete filepath to your game root folder (example: C:\Steam\steamapps\common\Shadow of Mordor).
 
 For both commandline and batch methods, use the following syntax:
 
