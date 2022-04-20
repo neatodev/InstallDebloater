@@ -12,7 +12,7 @@ This template is designed to work with Resident Evil 6.
 
 ## Usage
 
-First, open RE6.ini with a text editor and add the complete filepath to your game root folder (example: C:\Steam\steamapps\common\Batman Arkham Asylum GOTY).
+First, open RESIDENT_EVIL_6.ini with a text editor and add the complete filepath to your game root folder (example: C:\Steam\steamapps\common\Batman Arkham Asylum GOTY).
 
 For both commandline and batch methods, use the following syntax:
 
