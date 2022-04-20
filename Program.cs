@@ -56,12 +56,12 @@
             }
             catch (IniParser.Exceptions.ParsingException)
             {
-                Console.WriteLine("Could not parse file. Is the path/format correct? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
+                Console.WriteLine("Could not parse file. Is the path/format correct? " + System.IO.Path.Combine(Directory.GetCurrentDirectory(),args[0]));
                 Console.ReadLine();
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
+                Console.WriteLine("Could not read file. Is the path/filename valid? " + System.IO.Path.Combine(Directory.GetCurrentDirectory(),args[0]));
                 Console.ReadLine();
             }
         }
@@ -123,9 +123,9 @@
                     }
                     try
                     {
-                        TotalFileSize += new FileInfo(RootFolder + "\\" + line).Length;
-                        System.IO.File.Delete(RootFolder + "\\" + line);
-                        Console.WriteLine("Deleted: " + RootFolder + "\\" + line);
+                        TotalFileSize += new FileInfo(System.IO.Path.Combine(RootFolder,line)).Length;
+                        System.IO.File.Delete(System.IO.Path.Combine(RootFolder,line));
+                        Console.WriteLine("Deleted: " + System.IO.Path.Combine(RootFolder,line));
                         FileCounter++;
                     }
                     catch (FileNotFoundException)
@@ -204,7 +204,7 @@
 
             foreach (string folder in folderfile)
             {
-                var fullpath = RootFolder + "\\" + folder;
+                var fullpath = System.IO.Path.Combine(RootFolder,@"\" + folder);
 
                 try
                 {
