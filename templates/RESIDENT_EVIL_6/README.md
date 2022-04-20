@@ -20,7 +20,7 @@ For both commandline and batch methods, use the following syntax:
 .\InstallDebloater.exe RESIDENT_EVIL_6\RESIDENT_EVIL_6.ini
 ```
 This will run the script.
-If you want to keep some languages, take a look at both RESIDENT_EVIL_6_NAMING_SCHEME.txt template. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
+If you want to keep some languages, take a look at both RESIDENT_EVIL_6_NAMING_SCHEME.txt RESIDENT_EVIL_6_FOLDER.txt templates. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
 
 ## Contributing
 You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files. 
