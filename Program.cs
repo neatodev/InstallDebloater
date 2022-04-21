@@ -1,11 +1,15 @@
 ﻿namespace InstallDebloater
 {
+    using System.Text.RegularExpressions;
     using IniParser;
     using IniParser.Model;
     class Program
     {
         // Root folder of the game/application
-        static string? RootFolder;
+        private static string? RootFolder;
+
+        private static OperatingSystem os = Environment.OSVersion;
+        private static PlatformID pid = os.Platform;
 
         private static int FileCounter, FolderCounter = 0;
         private static bool IsRelative, IsNamingScheme, IsFolder;
@@ -56,12 +60,12 @@
             }
             catch (IniParser.Exceptions.ParsingException)
             {
-                Console.WriteLine("Could not parse file. Is the path/format correct? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
+                Console.WriteLine("Could not parse file. Is the path/format correct? " + System.IO.Path.Combine(Directory.GetCurrentDirectory(), args[0]));
                 Console.ReadLine();
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("Could not read file. Is the path/filename valid? " + Directory.GetCurrentDirectory() + "\\" + args[0]);
+                Console.WriteLine("Could not read file. Is the path/filename valid? " + System.IO.Path.Combine(Directory.GetCurrentDirectory(), args[0]));
                 Console.ReadLine();
             }
         }
@@ -113,6 +117,22 @@
 
             string[] file = System.IO.File.ReadAllLines(relative);
 
+            if (pid != PlatformID.Win32NT)
+            {
+                Regex pattern = new Regex("[\\\\]");
+
+                for (int i = 0; i <= file.Count() - 1; i++)
+                {
+                    try
+                    {
+                        file[i] = pattern.Replace(file[i], "/");
+                    }
+                    catch (ArgumentException)
+                    {
+                    }
+                }
+            }
+
             foreach (string line in file)
             {
                 try
@@ -123,9 +143,9 @@
                     }
                     try
                     {
-                        TotalFileSize += new FileInfo(RootFolder + "\\" + line).Length;
-                        System.IO.File.Delete(RootFolder + "\\" + line);
-                        Console.WriteLine("Deleted: " + RootFolder + "\\" + line);
+                        TotalFileSize += new FileInfo(System.IO.Path.Combine(RootFolder, line)).Length;
+                        System.IO.File.Delete(System.IO.Path.Combine(RootFolder, line));
+                        Console.WriteLine("Deleted: " + System.IO.Path.Combine(RootFolder, line));
                         FileCounter++;
                     }
                     catch (FileNotFoundException)
@@ -202,9 +222,25 @@
 
             string[] folderfile = System.IO.File.ReadAllLines(folderlist);
 
+            if (pid != PlatformID.Win32NT)
+            {
+                Regex pattern = new Regex("[\\\\]");
+
+                for (int i = 0; i <= folderfile.Count() - 1; i++)
+                {
+                    try
+                    {
+                        folderfile[i] = pattern.Replace(folderfile[i], "/");
+                    }
+                    catch (ArgumentException)
+                    {
+                    }
+                }
+            }
+
             foreach (string folder in folderfile)
             {
-                var fullpath = RootFolder + "\\" + folder;
+                var fullpath = System.IO.Path.Combine(RootFolder, folder);
 
                 try
                 {
