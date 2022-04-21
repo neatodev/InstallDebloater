@@ -66,7 +66,7 @@ dat\folder\example\dir
 
 naming_scheme.example
 ```
-**Important notice for Linux users:** Yes, the back slashes will work. Don't use forward slashes.
+**Important notice for Linux users:** Yes, the back slashes will work. Only use forward slashes to set your root folder!
 
 In the **_RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
 
