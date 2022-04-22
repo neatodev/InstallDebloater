@@ -1,4 +1,5 @@
-﻿namespace InstallDebloater
+﻿using System.IO;
+namespace InstallDebloater
 {
     using System.Text.RegularExpressions;
     using IniParser;
@@ -161,12 +162,29 @@
 
         /// <summary>
         /// Deletes files in the *_NAMING_SCHEME.txt document. (Files with a specific structure)
+        /// A partial folder structure that ends with a target file works too.
         /// </summary>
         private static void DeleteNamingScheme(string arg)
         {
             string scheme = arg.Substring(0, arg.LastIndexOf(".")) + "_NAMING_SCHEME.txt";
 
             string[] schemefile = System.IO.File.ReadAllLines(scheme);
+
+            if (pid != PlatformID.Win32NT)
+            {
+                Regex pattern = new Regex("[\\\\]");
+
+                for (int i = 0; i <= schemefile.Count() - 1; i++)
+                {
+                    try
+                    {
+                        schemefile[i] = pattern.Replace(schemefile[i], "/");
+                    }
+                    catch (ArgumentException)
+                    {
+                    }
+                }
+            }
 
             foreach (string line in schemefile)
             {
@@ -191,6 +209,21 @@
                                 System.IO.File.Delete(file);
                                 FileCounter++;
                             }
+                        }
+                        try
+                        {
+                            var path = System.IO.Path.Combine(RootFolder, folder, line);
+                            TotalFileSize += new FileInfo(path).Length;
+                            System.IO.File.Delete(path);
+                            Console.WriteLine("Deleting: " + path);
+                            FileCounter++;
+
+                        }
+                        catch (FileNotFoundException)
+                        {
+                        }
+                        catch (DirectoryNotFoundException)
+                        {
                         }
                     }
 
