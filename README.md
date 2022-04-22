@@ -37,7 +37,6 @@ In the second example, we reduce the size of Resident Evil: Revelations 2 by **8
 3. (CMD Method) If you run the tool through the commandline, make sure to pass the full path relative to InstallDebloater.exe as an argument.
 4. Run it! (Execute .bat file/Run the command in CMD)
 
-
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S)
 
 ## Custom Templates
@@ -67,6 +66,8 @@ dat\folder\example\dir
 
 naming_scheme.example
 ```
+**Important notice for Linux users:** Yes, the back slashes will work. Only use forward slashes to set your root folder!
+
 In the **_RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
 
 In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
