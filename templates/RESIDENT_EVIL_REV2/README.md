@@ -14,7 +14,7 @@ First, open RESIDENT_EVIL_REV2.ini with a text editor and add the complete filep
 For both commandline and batch methods, use the following syntax:
 
 ```bash
-.\InstallDebloater.exe RESIDENT_EVIL_REV2/RESIDENT_EVIL_REV2.ini
+.\InstallDebloater.exe RESIDENT_EVIL_REV2\RESIDENT_EVIL_REV2.ini
 ```
 This will run the script.
 If you want to keep some languages, take a look at the RESIDENT_EVIL_REV2_NAMING_SCHEME.txt template. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
