@@ -245,22 +245,6 @@ namespace InstallDebloater
 
             string[] folderfile = DefinePlatform(System.IO.File.ReadAllLines(folderlist));
 
-            if (pid != PlatformID.Win32NT)
-            {
-                Regex pattern = new Regex("[\\\\]");
-
-                for (int i = 0; i <= folderfile.Count() - 1; i++)
-                {
-                    try
-                    {
-                        folderfile[i] = pattern.Replace(folderfile[i], "/");
-                    }
-                    catch (ArgumentException)
-                    {
-                    }
-                }
-            }
-
             foreach (string folder in folderfile)
             {
                 var fullpath = System.IO.Path.Combine(RootFolder, folder);
