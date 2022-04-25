@@ -109,6 +109,29 @@ namespace InstallDebloater
         }
 
         /// <summary>
+        /// Checks if the OS is Windows. If not, strings get converted. Returns the string.
+        /// </summary>
+        private static string[] DefinePlatform(string[] list)
+        {
+            if (pid != PlatformID.Win32NT)
+            {
+                Regex pattern = new Regex("[\\\\]");
+
+                for (int i = 0; i <= list.Count() - 1; i++)
+                {
+                    try
+                    {
+                        list[i] = pattern.Replace(list[i], "/");
+                    }
+                    catch (ArgumentException)
+                    {
+                    }
+                }
+            }
+            return list;
+        }
+
+        /// <summary>
         /// Deletes files in the *_RELATIVE.txt document. (Files that are relative to ROOT)
         /// </summary>
         private static void DeleteRelative(string arg)
@@ -116,23 +139,7 @@ namespace InstallDebloater
 
             string relative = arg.Substring(0, arg.LastIndexOf(".")) + "_RELATIVE.txt";
 
-            string[] file = System.IO.File.ReadAllLines(relative);
-
-            if (pid != PlatformID.Win32NT)
-            {
-                Regex pattern = new Regex("[\\\\]");
-
-                for (int i = 0; i <= file.Count() - 1; i++)
-                {
-                    try
-                    {
-                        file[i] = pattern.Replace(file[i], "/");
-                    }
-                    catch (ArgumentException)
-                    {
-                    }
-                }
-            }
+            string[] file = DefinePlatform(System.IO.File.ReadAllLines(relative));
 
             foreach (string line in file)
             {
@@ -168,23 +175,7 @@ namespace InstallDebloater
         {
             string scheme = arg.Substring(0, arg.LastIndexOf(".")) + "_NAMING_SCHEME.txt";
 
-            string[] schemefile = System.IO.File.ReadAllLines(scheme);
-
-            if (pid != PlatformID.Win32NT)
-            {
-                Regex pattern = new Regex("[\\\\]");
-
-                for (int i = 0; i <= schemefile.Count() - 1; i++)
-                {
-                    try
-                    {
-                        schemefile[i] = pattern.Replace(schemefile[i], "/");
-                    }
-                    catch (ArgumentException)
-                    {
-                    }
-                }
-            }
+            string[] schemefile = DefinePlatform(System.IO.File.ReadAllLines(scheme));
 
             foreach (string line in schemefile)
             {
@@ -217,7 +208,6 @@ namespace InstallDebloater
                             System.IO.File.Delete(path);
                             Console.WriteLine("Deleting: " + path);
                             FileCounter++;
-
                         }
                         catch (FileNotFoundException)
                         {
@@ -253,23 +243,7 @@ namespace InstallDebloater
         {
             string folderlist = arg.Substring(0, arg.LastIndexOf(".")) + "_FOLDER.txt";
 
-            string[] folderfile = System.IO.File.ReadAllLines(folderlist);
-
-            if (pid != PlatformID.Win32NT)
-            {
-                Regex pattern = new Regex("[\\\\]");
-
-                for (int i = 0; i <= folderfile.Count() - 1; i++)
-                {
-                    try
-                    {
-                        folderfile[i] = pattern.Replace(folderfile[i], "/");
-                    }
-                    catch (ArgumentException)
-                    {
-                    }
-                }
-            }
+            string[] folderfile = DefinePlatform(System.IO.File.ReadAllLines(folderlist));
 
             foreach (string folder in folderfile)
             {

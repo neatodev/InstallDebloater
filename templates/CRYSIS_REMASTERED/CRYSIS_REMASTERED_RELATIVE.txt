@@ -1,0 +1,35 @@
+# The following will delete all localizations.
+# Add a # at the beginning of a line to keep this language. 
+
+# Chinese Simplified
+Game\Localized\chineses.pak
+
+# Chinese Traditional
+Game\Localized\chineset.pak
+
+# Czech
+Game\Localized\czech.pak
+
+# French
+Game\Localized\french.pak
+
+# German
+Game\Localized\german.pak
+
+# Italian
+Game\Localized\italian.pak
+
+# Japanese
+Game\Localized\japanese.pak
+
+# Polish
+Game\Localized\polish.pak
+
+# Russian
+Game\Localized\russian.pak
+
+# Spanish
+Game\Localized\spanish.pak
+
+# Turkish
+Game\Localized\turkish.pak

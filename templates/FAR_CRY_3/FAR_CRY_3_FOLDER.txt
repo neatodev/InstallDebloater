@@ -1,0 +1,8 @@
+# The following will delete the Soundtrack and Redists.
+
+
+# Redists
+Support
+
+#Soundtrack
+Soundtrack
