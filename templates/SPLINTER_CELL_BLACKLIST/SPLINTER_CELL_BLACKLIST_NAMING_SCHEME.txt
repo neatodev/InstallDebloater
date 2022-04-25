@@ -1,0 +1,21 @@
+# the following will delete all audio localizations files.
+# Add a # at the beginning of a line to keep this language. 
+
+
+# French
+_French.uax
+
+# Italian
+_Italian.uax
+
+# Spanish
+_Spanish.uax
+
+# Russian
+_Russian.uax
+
+# Portuguese
+_Portuguese.uax
+
+# German
+_German.uax
