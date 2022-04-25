@@ -3,6 +3,8 @@
 This template is designed to work with Crysis Remastered. Should work with all versions of the game and was tested on the Steam version. 
 - Removes all languages except English (aka localizations).
 
+Expected saving: 8.93% (1.8Gb)
+
 ## Installation
 
 [Download](https://github.com/neatodev/InstallDebloater/blob/main/templates/CRYSIS_REMASTERED/CRYSIS_REMASTERED.zip) and put the folder next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
