@@ -1,0 +1,27 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line or delete it to keep this language. 
+
+
+# French
+_french.dat
+_french.fat
+
+# German
+_german.dat
+_german.fat
+
+# Italian
+_italian.dat
+_italian.fat
+
+# Japanese
+_japanese.fat
+_japanese.dat
+
+# Russian
+_russian.dat
+_russian.fat
+
+# Spanish
+_spanish.dat
+_spanish.fat

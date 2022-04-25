@@ -1,0 +1,3 @@
+# The following will delete the Ubisoft Connect Installer.
+
+UbisoftConnectInstaller.exe
