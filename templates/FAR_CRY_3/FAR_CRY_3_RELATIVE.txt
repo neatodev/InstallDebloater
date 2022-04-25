@@ -1,0 +1,3 @@
+# The following will delete the Survival Guide PDF.
+
+FC3_Survival_Guide_Digital.pdf
