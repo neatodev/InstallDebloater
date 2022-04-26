@@ -14,6 +14,10 @@ It depends on the specific game or application. Sometimes we remove unused local
 
 Ultimately, what gets deleted and what stays is very specific to that game or application, please check the next section for more information on templates.
 
+**YouTube Showcase:**
+
+[<img src="https://user-images.githubusercontent.com/49599979/165360272-9e0952e9-a1be-4d4f-b2f4-62b881807ae9.png" width="156"/>](https://www.youtube.com/watch?v=PTsLJG5w-T8)
+
 ## Templates
 
 In the ['templates'](https://github.com/neatodev/InstallDebloater/tree/main/templates) directory, you will find curated and tested configurations for games and applications that you can just download and run yourself. Every template that we provide has been thoroughly tested by [EVERGREEN](https://github.com/EV3RGR33N) and myself.
