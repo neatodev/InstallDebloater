@@ -1,0 +1,28 @@
+# The following will delete localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# French
+nativePC\message\mes_fra
+
+# German
+nativePC\message\mes_ger
+
+# Italian
+nativePC\message\mes_ita
+
+# Spanish
+nativePC\message\mes_spa
+
+# Russian
+nativePC\message\mes_rus
+
+# Korean
+nativePC\message\mes_kra
+
+# Polish
+nativePC\message\mes_pol
+
+
+# The following will delete the redistribuable folder.
+
+redist
