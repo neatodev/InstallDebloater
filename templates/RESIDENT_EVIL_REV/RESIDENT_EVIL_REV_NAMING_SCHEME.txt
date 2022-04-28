@@ -1,0 +1,40 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+_GER.
+_ger.
+
+# Spanish
+_ESP.
+_spa.
+
+# French
+_FRA.
+_fre.
+
+# Polish
+_pol.
+
+# Portuguese
+_por.
+
+# Brazilian Portuguese
+_ptB.
+
+# Chinese
+_chT.
+_chS.
+
+# Italian
+_ITA.
+_ita.
+
+# Russian
+_rus.
+
+# Japanese (Voices only)
+_JPN.sngw
+
+# ?
+_dut.
