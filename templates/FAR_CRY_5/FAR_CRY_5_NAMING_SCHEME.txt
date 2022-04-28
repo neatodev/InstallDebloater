@@ -1,0 +1,30 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line or delete it to keep this language. 
+
+# Brazilian
+_brazilian
+_brazilian_
+
+# French
+_french
+_french_
+
+# German
+_german
+_german_
+
+# Italian
+_italian
+_italian_
+
+# Japanese
+_japanese
+_japanese_
+
+# Russian
+_russian
+_russian_
+
+# Spanish
+_spanish
+_spanish_
