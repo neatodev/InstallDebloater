@@ -1,0 +1,7 @@
+# The following will delete the Support folder, Redist folder, PhysX folder and DirectX.
+# You should run the game at least once before using this template.
+
+# Redists
+DirectX
+PhysX
+Redistributable
