@@ -1,0 +1,59 @@
+# This will delete all localizations.
+
+# Czech
+.cze
+_CZE.
+
+# Hungarian
+.hun
+_HUN.
+
+# German
+.deu
+.Deu
+.DEU
+_DEU.
+
+# Spanish
+_ESN.
+.esn
+.ESN
+.Esn
+
+# Mexico Spanish 
+.ESM
+.Esm
+.esm
+_ESM.
+
+# Polish
+.POL
+_POL.
+.Pol
+.pol
+
+# Portuguese
+.POR
+.Por
+.por
+_POR.
+
+# Russian
+.RUS
+.Rus
+.rus
+_RUS.
+
+# French
+_FRA.
+.fra
+.Fra
+.FRA
+
+# Italian
+.ita
+.ITA
+.Ita
+_ITA.
+.ita
+.Ita
