@@ -1,0 +1,40 @@
+# The following will delete all localizations files and startup movies. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+.deu_
+_deu.
+_DEU.
+Localizeddeu.lbf
+
+# Spanish
+.esp_
+_esp.
+_ESP.
+Localizedesp.lbf
+
+# Japanese
+.jpn_
+_jpn.
+_JPN.
+Localizedjpn.lbf
+
+# French
+.fra_
+_fra.
+_FRA.
+Localizedfra.lbf
+
+# Italian
+.ita_
+_ita.
+_ITA.
+Localizedita.lbf
+
+# Chinese
+_chn.
+_CHN.
+Localizedchn.lbf
+
+# Startup Movies
+2KG_logo_720P
