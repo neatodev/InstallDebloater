@@ -1,2 +1,2 @@
-:: This is a sample batch file to demonstrate how to run the .exe
+:: Make sure to set your game path in MIRRORS_EDGE.ini correctly, then run this batch file.
 .\InstallDebloater.exe MIRRORS_EDGE\MIRRORS_EDGE.ini

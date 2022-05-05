@@ -14,6 +14,9 @@ _HUN.
 .DEU
 _DEU.
 
+# Japanese
+.jpn
+
 # Spanish
 _ESN.
 .esn

@@ -5,6 +5,8 @@ This template is designed to work with Mirror's Edge. Should work with all versi
 - Removes all redists.
 - Removes all startup movies that play before reaching the main menu (Publisher logos etc.).
 
+Expected saving: 5.9% (435Mb).
+
 ## Installation
 
 [Download](https://github.com/neatodev/InstallDebloater/blob/main/templates/MIRRORS_EDGE/MIRRORS_EDGE.zip) and put the folder next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
