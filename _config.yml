@@ -3,3 +3,4 @@ show_downloads: true
 github:
   win_url: https://github.com/neatodev/InstallDebloater/releases/download/1.0.3.2/InstallDebloater-WINDOWS.zip
   linux_url: https://github.com/neatodev/InstallDebloater/releases/download/1.0.3.2/InstallDebloater-LINUX.zip
+  template_url: https://github.com/neatodev/InstallDebloater/tree/main/templates
