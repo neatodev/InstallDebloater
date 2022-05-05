@@ -40,9 +40,13 @@
 
         <aside id="sidebar">
           {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="button">
+            <a href="{{ site.github.win_url }}" class="button">
               <small>Download</small>
-              .zip file
+              for Windows
+            </a>
+            <a href="{{ site.github.linux_url }}" class="button">
+              <small>Download</small>
+              for Linux
             </a>
           {% endif %}
 
