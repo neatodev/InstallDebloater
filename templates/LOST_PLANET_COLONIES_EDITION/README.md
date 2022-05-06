@@ -17,7 +17,7 @@ For both commandline and batch methods, use the following syntax:
 .\InstallDebloater.exe LOST_PLANET_COLONIES_EDITION\LOST_PLANET_COLONIES_EDITION.ini
 ```
 This will run the script.
-If you want to keep some languages, take a look at both LOST_PLANET_COLONIES_EDITION_6_NAMING_SCHEME.txt and LOST_PLANET_COLONIES_EDITION_FOLDER.txt templates. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
+If you want to keep some languages, take a look at both LOST_PLANET_COLONIES_EDITION_NAMING_SCHEME.txt and LOST_PLANET_COLONIES_EDITION_FOLDER.txt templates. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
 
 ## Contributing
 You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files. 
