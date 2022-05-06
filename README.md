@@ -14,9 +14,7 @@ It depends on the specific game or application. Sometimes we remove unused local
 
 Ultimately, what gets deleted and what stays is very specific to that game or application, please check the next section for more information on templates.
 
-**YouTube Showcase:**
-
-[<img src="https://user-images.githubusercontent.com/49599979/165360272-9e0952e9-a1be-4d4f-b2f4-62b881807ae9.png" width="156"/>](https://www.youtube.com/watch?v=PTsLJG5w-T8)
+[<img src="https://user-images.githubusercontent.com/49599979/167110329-44e38483-d2c0-45f2-b41a-2cc91c6bae0c.png" width="158"/>](https://www.youtube.com/watch?v=PTsLJG5w-T8)
 
 ## Templates
 
