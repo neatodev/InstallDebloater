@@ -14,9 +14,7 @@ It depends on the specific game or application. Sometimes we remove unused local
 
 Ultimately, what gets deleted and what stays is very specific to that game or application, please check the next section for more information on templates.
 
-**YouTube Showcase:**
-
-[<img src="https://user-images.githubusercontent.com/49599979/165360272-9e0952e9-a1be-4d4f-b2f4-62b881807ae9.png" width="156"/>](https://www.youtube.com/watch?v=PTsLJG5w-T8)
+[<img src="https://user-images.githubusercontent.com/49599979/167110329-44e38483-d2c0-45f2-b41a-2cc91c6bae0c.png" width="158"/>](https://www.youtube.com/watch?v=PTsLJG5w-T8)
 
 ## Templates
 
@@ -44,6 +42,8 @@ In the second example, we reduce the size of Resident Evil: Revelations 2 by **8
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=LG7YTKP4JYN5S)
 
 ## Custom Templates
+
+[<img src="https://user-images.githubusercontent.com/49599979/167308289-a7d68726-18cb-444c-a24d-fe786d4faf20.png" width="158"/>](https://www.youtube.com/watch?v=R6KIyPzzvsk)
 
 While we provide curated and tested templates, you can also create your own.
 
@@ -73,11 +73,11 @@ naming\scheme\folder.example
 ```
 **Important notice for Linux users:** Yes, the back slashes will work. Only use forward slashes to set your root folder!
 
-In the **...RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
+In the **_RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
 
-In the **...FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
+In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
 
-In the **...NAMING_SCHEME.txt** file, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matching files will get deleted. You can also provide a partial folder structure as long as it contains a target file.
+In the **_NAMING_SCHEME.txt** file, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matching files will get deleted. You can also provide a partial folder structure as long as it contains a target file.
 
 
 The structure for all files is as follows:
