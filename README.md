@@ -43,6 +43,8 @@ In the second example, we reduce the size of Resident Evil: Revelations 2 by **8
 
 ## Custom Templates
 
+[<img src="https://user-images.githubusercontent.com/49599979/167308289-a7d68726-18cb-444c-a24d-fe786d4faf20.png" width="158"/>](https://www.youtube.com/watch?v=R6KIyPzzvsk)
+
 While we provide curated and tested templates, you can also create your own.
 
 First, you need an .ini file. The name does not matter, but it needs to be universal for all .txt files that depend on it (see structure). The contents of the .ini file need to look like this:
