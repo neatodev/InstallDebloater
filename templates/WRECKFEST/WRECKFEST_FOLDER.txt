@@ -1,0 +1,6 @@
+# The following will delete modding tools and mod example.
+
+
+tools
+mods\example
+BagEdit
