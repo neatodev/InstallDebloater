@@ -20,7 +20,7 @@ For both commandline and batch methods, use the following syntax:
 .\InstallDebloater.exe WRECKFEST\WRECKFEST.ini
 ```
 This will run the script.
-If you want to keep some languages, take a look at the WRECKFEST.txt template. All languages are isolated, just comment the lines related to the language(s) you want to keep. 
+If you want to keep some tools, take a look at the WRECKFEST_FOLDER.txt template. Just comment the lines related to the folder(s) you want to keep. 
 
 ## Contributing
 You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files. 
