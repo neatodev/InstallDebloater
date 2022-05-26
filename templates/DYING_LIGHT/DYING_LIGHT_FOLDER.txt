@@ -1,0 +1,7 @@
+# The following will delete the Extras folder.
+
+Extras
+
+# The following will delete the DevTools folder. WARNING: Will disable the ability to launch "Custom Game". It is not deleted by default, remove the # character to do so.
+
+# DevTools

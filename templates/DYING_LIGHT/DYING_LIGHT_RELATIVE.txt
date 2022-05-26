@@ -1,0 +1,9 @@
+# The following will delete all startup movies and a "patch preview" video that isn't used anymore. 
+# WARNING: Make sure to add the "-nologos" launch argument otherwise the game won't launch.
+
+DW\Data\Menu\Movies\Intro_720p.bik
+DW\Data\Menu\Movies\nvidia_alienware.bik
+DW\Data\Menu\Movies\nvidia_alienware_lq.bik
+DW\Data\Menu\Movies\patch_mainmenu_video.bik
+
+

@@ -1,0 +1,23 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+SpeechDe
+
+# Spanish
+SpeechEs
+
+# Polish
+SpeechPl
+
+# Portuguese (Brazil)
+SpeechBr
+
+# "El"
+SpeechEl
+
+# French
+SpeechFr
+
+# Italian
+SpeechIt
