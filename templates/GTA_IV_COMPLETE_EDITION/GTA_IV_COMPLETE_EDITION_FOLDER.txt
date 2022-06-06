@@ -1,0 +1,5 @@
+# The following will delete the Online Multiplayer folder.
+
+Redistributables
+GTAIV\Redistributables
+GTAIV\Manuals
