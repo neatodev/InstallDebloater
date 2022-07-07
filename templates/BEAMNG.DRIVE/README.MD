@@ -20,7 +20,7 @@ For both commandline and batch methods, use the following syntax:
 .\InstallDebloater.exe BEAMNG.DRIVE\BEAMNG.DRIVE.ini
 ```
 This will run the script.
-If you want to keep some tools, take a look at the WRECKFEST_FOLDER.txt template. Just comment the lines related to the folder(s) you want to keep. 
+If you are a Linux user, then go to the BEAMNG.DRIVE.ini and change FOLDER=true to FOLDER=false to prevent deleting necessary files.
 
 ## Contributing
-You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files. 
+You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files.
