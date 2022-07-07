@@ -1,0 +1,4 @@
+# The following will delete Linux binaries.
+
+BinLinux
+locales\cef_linux

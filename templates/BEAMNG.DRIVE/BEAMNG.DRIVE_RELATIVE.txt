@@ -1,0 +1,3 @@
+# The following will delete the Visual C Redistributable installer.
+
+Bin64\VC_redist.x64.exe
