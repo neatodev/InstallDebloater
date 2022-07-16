@@ -6,6 +6,8 @@ This template is designed to work Grand Theft Auto IV: Complete Edition. Should 
 
 Expected saving: 1.92% (440.51Mb).
 
+NOTE: Since the Rockstar Game Launcher gets updated frequently, it will be re-downloaded even if you deleted it using this template. It is about 200mb. However, you can always run this script each time you see an update on Steam to remove it until the next update. 
+
 ## Installation
 
 [Download](https://github.com/neatodev/InstallDebloater/blob/main/templates/GTA_IV_COMPLETE_EDITION/GTA_IV_COMPLETE_EDITION.zip) and put the folder next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
