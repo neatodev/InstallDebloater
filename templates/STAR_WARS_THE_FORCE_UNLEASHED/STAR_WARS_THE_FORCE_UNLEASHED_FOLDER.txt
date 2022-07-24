@@ -1,0 +1,5 @@
+# The following will delete the Support folder, which contains DirectX, dotnet and VC Redists. 
+# You should run the game at least once before using this template.
+
+# Redists
+Support

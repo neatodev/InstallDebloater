@@ -1,0 +1,19 @@
+# This will delete all Startup movies.
+
+# English
+FMV\FMV-GoldGuy-WMV9_HD_STEREO.bik
+Aspyr.bik
+
+# Localized
+FMV\FMV-GoldGuy_DE-WMV9_HD_STEREO.bik
+FMV\FMV-GoldGuy_ES-WMV9_HD_STEREO.bik
+FMV\FMV-GoldGuy_FR-WMV9_HD_STEREO.bik
+FMV\FMV-GoldGuy_IT-WMV9_HD_STEREO.bik
+FMV\FMV-GoldGuy_PL-WMV9_HD_STEREO.bik
+FMV\FMV-GoldGuy_RU-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_DE-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_ES-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_FR-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_IT-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_PL-WMV9_HD_STEREO.bik
+FMV\FMV-CineBlock_01_RU-WMV9_HD_STEREO.bik

@@ -1,0 +1,19 @@
+# The following will delete all localizations files except English. 
+# Add a # at the beginning of a line to keep this language. 
+
+# German
+.st.ge.pcd
+.st.ge.pcp
+
+# Italian
+.st.it.pcd
+.st.it.pcp
+
+# Spanish
+.st.sp.pcd
+.st.sp.pcp
+
+# French
+.st.fr.pcp
+.st.fr.pcd
+
