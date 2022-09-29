@@ -1,0 +1,3 @@
+# The following will delete documents for level editor.
+
+docs

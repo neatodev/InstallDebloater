@@ -1,0 +1,12 @@
+# The following will delete the non-english video files.
+# Add a # at the beginning of a line to keep this language. 
+
+
+# French
+fr.ogv
+
+# German
+de.ogv
+
+# Spanish
+es.ogv
