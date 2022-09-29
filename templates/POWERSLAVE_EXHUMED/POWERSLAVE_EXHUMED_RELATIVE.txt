@@ -1,0 +1,5 @@
+# The following will delete all startup movies.
+
+movies\Kex.ogv
+movies\NightDive.ogv
+movies\throwback.ogv
