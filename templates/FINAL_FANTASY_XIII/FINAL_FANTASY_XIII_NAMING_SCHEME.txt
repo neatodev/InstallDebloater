@@ -1,8 +1,4 @@
-# The following will delete all Japanese or optionally English pre-rendered cutscenes, which is disabled by default. 
-# Add a # at the beginning of a line to keep this language, remove the # character to enable deletion.
-
-# Japanese Pre-rendered Cutscenes
-.win32.wmp
+# The following will delete all English pre-rendered cutscenes.
 
 # English pre-rendered Cutscenes
 # _us.win32.wmp

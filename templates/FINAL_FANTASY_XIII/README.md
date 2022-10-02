@@ -1,8 +1,7 @@
 # Install Debloater for Final Fantasy XIII
 
 This template is designed to work with Final Fantasy XIII. Should work with all versions of the game and was tested on the Steam version. 
- - Removes Japanese pre-rendered cutscenes.
- - OPTIONAL: Removes English pre-rendered cutscenes. Meant for people who play with the Japanese dub. Enable it in FINAL_FANTASY_XIII_NAMING_SCHEME.
+ - Removes English pre-rendered cutscenes.
 
 Expected saving: 34.52% (20.3Gb).
 
@@ -20,7 +19,6 @@ For both commandline and batch methods, use the following syntax:
 .\InstallDebloater.exe FINAL_FANTASY_XIII\FINAL_FANTASY_XIII.ini
 ```
 This will run the script.
-If you want to keep Japanese cutscenes and delete the English ones instead, take a look at the FINAL_FANTASY_XIII_NAMING_SCHEME.txt template. Remove the # character for the Japanese section, and add it to the English one. 
 
 ## Contributing
 You are welcome to contribute by making your own templates or improve existing ones. However, please make sure you're not trying to delete critical files. 
