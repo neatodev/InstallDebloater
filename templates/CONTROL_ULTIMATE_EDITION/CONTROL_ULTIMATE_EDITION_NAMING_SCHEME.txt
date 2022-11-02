@@ -1,0 +1,44 @@
+# The following will delete all localizations files. 
+# Add a # at the beginning of a line to keep this language. 
+
+# Arabic
+-ar.
+
+# German
+-de.
+
+# Spanish
+-es.
+
+# French
+-fr.
+
+# Italian
+-it.
+
+# Japanese
+-ja.
+
+# Korean
+-ko.
+
+# Latin?
+_LAS.
+
+# Polish
+-pl.
+
+# Portuguese
+-ptbr.
+
+# Russian
+-ru.
+
+# Simplified Chinese
+-zhcn.
+
+# Traditional Chinese
+-zhtw.
+
+
+
