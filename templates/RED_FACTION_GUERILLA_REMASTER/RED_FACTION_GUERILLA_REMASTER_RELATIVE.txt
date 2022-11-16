@@ -1,0 +1,6 @@
+# The following will delete all startup movies.
+
+data\legal_hd.bik
+data\logo_kaiko.bik
+data\logo_nordic_hd.bik
+data\logo_volition_hd.bik

@@ -4,6 +4,7 @@ This template is designed to work with Control Ultimate Edition. Tested on the S
 - Removes all languages except English.
 
 Expected saving: 2.08% (1056.422Mb)
+
 ## Installation
 
 [Download](https://github.com/neatodev/InstallDebloater/blob/main/templates/CONTROL_ULTIMATE_EDITION/CONTROL_ULTIMATE_EDITION.zip) and put the folder next to InstallDebloater.exe. Run the program either through PowerShell/Commandline or using the provided batch file.
