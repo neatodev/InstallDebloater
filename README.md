@@ -26,11 +26,11 @@ Each template has its own unique and detailed README file that explains what it 
 
 In the first example, we manage to reduce the file size of Batman: Arkham Origins by **over 40%**. The template deletes unused localizations and outdated multiplayer components:
 
-![Origins](https://user-images.githubusercontent.com/49599979/163802940-698d9433-11ca-4067-a01e-062542649aaf.png)
+![Origins](https://user-images.githubusercontent.com/49599979/203311573-c3c68195-ca5f-4c33-9023-9a0055a983f1.png)
 
 In the second example, we reduce the size of Resident Evil: Revelations 2 by **8,96%**. In this case, we remove localization files (sounds, texts, menus...) that we do not use.
 
-![Rev2](https://user-images.githubusercontent.com/49599979/163803078-2543cabe-4527-41ae-8b06-f0ae20f87d8e.png)
+![Rev2](https://user-images.githubusercontent.com/49599979/203311723-58c78e7f-0117-4a1c-90ae-e55ccbd24688.png)
 
 ## Usage
 
