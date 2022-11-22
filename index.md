@@ -26,11 +26,11 @@ Each template has its own unique and detailed README file that explains what it 
 
 In the first example, we manage to reduce the file size of Batman: Arkham Origins by **over 40%**. The template deletes unused localizations and outdated multiplayer components:
 
-![Origins](https://user-images.githubusercontent.com/49599979/163802940-698d9433-11ca-4067-a01e-062542649aaf.png)
+![Origins](https://user-images.githubusercontent.com/49599979/203311573-c3c68195-ca5f-4c33-9023-9a0055a983f1.png)
 
 In the second example, we reduce the size of Resident Evil: Revelations 2 by **8,96%**. In this case, we remove localization files (sounds, texts, menus...) that we do not use.
 
-![Rev2](https://user-images.githubusercontent.com/49599979/163803078-2543cabe-4527-41ae-8b06-f0ae20f87d8e.png)
+![Rev2](https://user-images.githubusercontent.com/49599979/203311723-58c78e7f-0117-4a1c-90ae-e55ccbd24688.png)
 
 ## Usage
 
@@ -73,11 +73,11 @@ naming\scheme\folder.example
 ```
 **Important notice for Linux users:** Yes, the back slashes will work. Only use forward slashes to set your root folder!
 
-In the **..RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
+In the **_RELATIVE.txt** file, you specify FULL path to files that are _RELATIVE_ to the root folder defined in the .ini file.
 
-In the **..FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
+In the **_FOLDER.txt** file, you specify the FULL PATH to folders that are _RELATIVE_ to the root folder defined in the .ini file. All files and sub-folders within that folder will get deleted too.
 
-In the **..NAMING_SCHEME.txt** file, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matching files will get deleted. You can also provide a partial folder structure as long as it contains a target file.
+In the **_NAMING_SCHEME.txt** file, you specify certain naming schemes. Every file and folder (starting from root) will get scanned and matching files will get deleted. You can also provide a partial folder structure as long as it contains a target file.
 
 
 The structure for all files is as follows:
