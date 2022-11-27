@@ -3,7 +3,7 @@
 This template is designed to work with Alien Isolation. Should work with all versions of the game and was tested on the Steam version. 
 - Removes all languages except English,
 - Removes all startup movies that play before reaching the main menu (Publisher logos etc.),
-- Removes the "Extras" folder (Banners, game cover art),
+- Removes the "Extras" folder (Banners, game cover art).
 
 Estimated savings: 6.88% (2.1Gb)
 
