@@ -1,0 +1,4 @@
+# The following will delete the Extras folder.
+
+Extras
+

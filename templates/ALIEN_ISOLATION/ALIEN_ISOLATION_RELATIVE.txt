@@ -1,0 +1,5 @@
+# The following will delete all startup movies.
+
+DATA\UI\MOVIES\AMD_IDENT.USM
+DATA\UI\MOVIES\ATTRACT.USM
+DATA\UI\MOVIES\CA_IDENT.USM
