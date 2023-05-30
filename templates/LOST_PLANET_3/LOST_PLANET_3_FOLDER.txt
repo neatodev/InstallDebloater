@@ -1,0 +1,3 @@
+# Optional: The following will remove all low resolution movies (about 4gb). Make sure that you have the free "Hi Res Movies" DLC installed. Remove the # or delete the following to opt-in.
+
+# LostPlanetGame\MoviesPC

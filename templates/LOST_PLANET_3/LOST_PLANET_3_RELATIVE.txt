@@ -1,0 +1,9 @@
+# The following will delete all startup movies.
+
+LostPlanetGame\Movies\StartupAntiPiracyJP.bik
+LostPlanetGame\Movies\StartupCapcomSpark.bik
+LostPlanetGame\Movies\StartupUnreal.bik
+LostPlanetGame\Movies\StartupViolenceWarningJP.bik
+LostPlanetGame\MoviesPC\StartupNVidia.bik
+
+
