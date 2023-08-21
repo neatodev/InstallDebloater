@@ -30,4 +30,4 @@ _vita.
 _chT.
 
 # Simplified Chinese
-_ChS.
+_chS.
