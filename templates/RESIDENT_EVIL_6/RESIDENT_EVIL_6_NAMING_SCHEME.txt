@@ -3,9 +3,11 @@
 
 # German
 _ger.
+_vger.
 
 # Spanish
 _spa.
+_vspa.
 
 # Polish
 _pol.
@@ -18,6 +20,14 @@ _rus.
 
 # French
 _fre.
+_vfre.
 
 # Italian
 _ita.
+_vita.
+
+# Traditional Chinese
+_chT.
+
+# Simplified Chinese
+_ChS.
